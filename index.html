@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Message Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Community Message Board</h1>
+            <p>Share your thoughts with the world - messages are saved forever!</p>
+        </div>
+
+        <div class="message-form">
+            <form id="messageForm">
+                <div class="form-group">
+                    <label for="authorName">Your Name:</label>
+                    <input type="text" id="authorName" name="authorName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="messageText">Your Message:</label>
+                    <textarea id="messageText" name="messageText" placeholder="What's on your mind?" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">📤 Send Message</button>
+            </form>
+        </div>
+
+        <div class="messages-container">
+            <h2 class="messages-title">💬 Community Messages</h2>
+            <div id="messagesDisplay">
+                <div class="no-messages">
+                    No messages yet. Be the first to share something! ✨
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
